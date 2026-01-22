@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './Contacto.css';
@@ -7,7 +8,7 @@ const Contacto = () => {
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
-    password: ''
+    mensaje: ''
   });
 
   const handleChange = (e) => {
@@ -19,8 +20,8 @@ const Contacto = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Formulario enviado!\nNombre: ${formData.nombre}\nEmail: ${formData.email}`);
-    setFormData({ nombre: '', email: '', password: '' });
+    alert(`Formulario enviado!\nNombre: ${formData.nombre}\nEmail: ${formData.email}\nMensaje: ${formData.mensaje}`);
+    setFormData({ nombre: '', email: '', mensaje: '' });
   };
 
   return (
@@ -29,6 +30,8 @@ const Contacto = () => {
       <main className="contacto-main">
         <div className="contacto-container">
           <h1>Formulario de Contacto</h1>
+          <p className="contact-intro">¿Tienes alguna pregunta o sugerencia? Completa el formulario y te responderemos pronto.</p>
+          
           <form onSubmit={handleSubmit} className="contacto-form">
             <div className="form-group">
               <label htmlFor="nombre">Nombre</label>
@@ -57,22 +60,24 @@ const Contacto = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="password">Contraseña</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={formData.password}
+              <label htmlFor="mensaje">Comentario</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                value={formData.mensaje}
                 onChange={handleChange}
                 required
-                placeholder="Ingresa tu contraseña"
+                placeholder="Escribe tu mensaje aquí..."
+                rows="5"
               />
             </div>
 
             <button type="submit" className="submit-btn">
-              Enviar
+              Enviar Mensaje
             </button>
           </form>
+          
+          
         </div>
       </main>
       <Footer />

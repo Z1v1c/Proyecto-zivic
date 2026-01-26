@@ -90,9 +90,6 @@ const Framework = () => {
                     href={reel.url}
                     target="_blank" 
                     rel="noopener noreferrer"
-                  className="reel-button"
-                >
-                  <span className="button-icon">▶</span>
                     className="reel-button"
                   >
                     <span className="button-icon">▶</span>

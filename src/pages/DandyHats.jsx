@@ -7,42 +7,49 @@ const DandyHats = () => {
   const tiktoks = [
     { 
       id: 1, 
+      videoId: '7457766506044067110',
       url: 'https://vt.tiktok.com/ZSa2b5VNS/',
       title: 'Estilo y Elegancia',
       description: 'Descubre los sombreros más elegantes de nuestra colección'
     },
     { 
       id: 2, 
+      videoId: '7457766949612604710',
       url: 'https://vt.tiktok.com/ZSa2bf2dV/',
       title: 'Colección Premium',
       description: 'Sombreros de alta calidad para cada ocasión'
     },
     { 
       id: 3, 
+      videoId: '7457768105838914822',
       url: 'https://vt.tiktok.com/ZSa2bPEos/',
       title: 'Tendencias',
       description: 'Los diseños más modernos y con estilo'
     },
     { 
       id: 4, 
+      videoId: '7457768621996485894',
       url: 'https://vt.tiktok.com/ZSa2b5YWF/',
       title: 'Detalles Únicos',
       description: 'Cada sombrero cuenta una historia'
     },
     { 
       id: 5, 
+      videoId: '7457769067009838342',
       url: 'https://vt.tiktok.com/ZSa2bkWe1/',
       title: 'Artesanía',
       description: 'Hecho con dedicación y pasión'
     },
     { 
       id: 6, 
+      videoId: '7457769681826270469',
       url: 'https://vt.tiktok.com/ZSa2bNuxU/',
       title: 'Estilo Clásico',
       description: 'La elegancia nunca pasa de moda'
     },
     { 
       id: 7, 
+      videoId: '7457770149673045254',
       url: 'https://vt.tiktok.com/ZSa2b5RaX/',
       title: 'Nueva Colección',
       description: 'Lo último en sombreros de diseñador'
@@ -76,23 +83,18 @@ const DandyHats = () => {
                 <h3 className="tiktok-video-title">{tiktok.title}</h3>
                 <p className="tiktok-video-description">{tiktok.description}</p>
                 <div className="tiktok-embed-wrapper">
-                  <blockquote 
-                    className="tiktok-embed" 
-                    cite={tiktok.url}
-                    data-video-id={tiktok.url.split('/').pop()}
-                    style={{ maxWidth: '605px', minWidth: '325px' }}
-                  >
-                    <section>
-                      <a 
-                        target="_blank" 
-                        title={tiktok.title}
-                        href={tiktok.url}
-                        rel="noopener noreferrer"
-                      >
-                        Ver en TikTok
-                      </a>
-                    </section>
-                  </blockquote>
+                  <iframe
+                    src={`https://www.tiktok.com/embed/v2/${tiktok.videoId}?lang=es-ES`}
+                    style={{
+                      width: '100%',
+                      height: '600px',
+                      border: 'none',
+                      borderRadius: '10px'
+                    }}
+                    allowFullScreen
+                    scrolling="no"
+                    allow="encrypted-media;"
+                  ></iframe>
                 </div>
                 <a 
                   href={tiktok.url}

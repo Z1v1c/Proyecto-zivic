@@ -21,25 +21,16 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Validación estricta del correo - debe tener @ y punto seguido de extensión
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const hasDomain = formData.email.includes('@') && formData.email.split('@')[1]?.includes('.');
-    
-    if (!emailRegex.test(formData.email) || !hasDomain) {
-      alert('Por favor ingresa una dirección de correo completa y válida con dominio (ejemplo: usuario@dominio.com)');
+    // Validación estricta - solo correos de Gmail
+    if (!formData.email.endsWith('@gmail.com')) {
+      alert('El correo debe ser de Gmail (@gmail.com)');
       return;
     }
     
-    // Verificar que después del @ haya texto y después del punto haya texto
-    const parts = formData.email.split('@');
-    if (parts.length !== 2 || !parts[0] || !parts[1]) {
-      alert('El correo debe tener el formato: usuario@dominio.com');
-      return;
-    }
-    
-    const domainParts = parts[1].split('.');
-    if (domainParts.length < 2 || !domainParts[0] || !domainParts[domainParts.length - 1]) {
-      alert('El correo debe incluir un dominio completo (ejemplo: @gmail.com, @hotmail.com)');
+    // Verificar que haya algo antes del @gmail.com
+    const username = formData.email.replace('@gmail.com', '');
+    if (!username || username.length === 0) {
+      alert('Por favor ingresa un correo completo (ejemplo: usuario@gmail.com)');
       return;
     }
     
@@ -70,7 +61,7 @@ const Contacto = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="email">Correo Electrónico</label>
+              <label htmlFor="email">Correo Electrónico (solo Gmail)</label>
               <input
                 type="text"
                 id="email"
@@ -78,9 +69,9 @@ const Contacto = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                title="Ingresa una dirección de correo completa (ejemplo: usuario@dominio.com)"
-                placeholder="usuario@dominio.com"
+                pattern=".*@gmail\.com$"
+                title="El correo debe ser de Gmail (@gmail.com)"
+                placeholder="usuario@gmail.com"
               />
             </div>
 

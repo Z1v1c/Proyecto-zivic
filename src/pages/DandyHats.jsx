@@ -73,25 +73,36 @@ const DandyHats = () => {
           <div className="video-grid tiktok-grid">
             {tiktoks.map((tiktok) => (
               <div key={tiktok.id} className="video-card tiktok-card">
-                <div className="video-preview tiktok-preview">
-                  <div className="video-overlay">
-                    <span className="play-icon">▶</span>
-                  </div>
-                  <div className="video-number">Video {tiktok.id}</div>
-                </div>
-                <div className="video-info">
-                  <h3 className="tiktok-video-title">{tiktok.title}</h3>
-                  <p className="tiktok-video-description">{tiktok.description}</p>
-                  <a 
-                    href={tiktok.url}
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="tiktok-button"
+                <h3 className="tiktok-video-title">{tiktok.title}</h3>
+                <p className="tiktok-video-description">{tiktok.description}</p>
+                <div className="tiktok-embed-wrapper">
+                  <blockquote 
+                    className="tiktok-embed" 
+                    cite={tiktok.url}
+                    data-video-id={tiktok.url.split('/').pop()}
+                    style={{ maxWidth: '605px', minWidth: '325px' }}
                   >
-                    <span className="button-icon">▶</span>
-                    Ver en TikTok
-                  </a>
+                    <section>
+                      <a 
+                        target="_blank" 
+                        title={tiktok.title}
+                        href={tiktok.url}
+                        rel="noopener noreferrer"
+                      >
+                        Ver en TikTok
+                      </a>
+                    </section>
+                  </blockquote>
                 </div>
+                <a 
+                  href={tiktok.url}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="tiktok-button"
+                >
+                  <span className="button-icon">▶</span>
+                  Ver en TikTok
+                </a>
               </div>
             ))}
           </div>

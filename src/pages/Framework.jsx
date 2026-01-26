@@ -77,25 +77,43 @@ const Framework = () => {
           <div className="video-grid reels-grid">
             {reels.map((reel) => (
               <div key={reel.id} className="video-card reel-card">
-                <div className="video-preview reel-preview">
-                  <div className="video-overlay">
-                    <span className="play-icon">▶</span>
-                  </div>
-                  <div className="video-number">Reel {reel.id}</div>
-                </div>
-                <div className="video-info">
-                  <h3 className="reel-video-title">{reel.title}</h3>
-                  <p className="reel-video-description">{reel.description}</p>
-                  <a 
-                    href={reel.url}
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="reel-button"
+                <h3 className="reel-video-title">{reel.title}</h3>
+                <p className="reel-video-description">{reel.description}</p>
+                <div className="reel-embed-wrapper">
+                  <blockquote 
+                    className="instagram-media" 
+                    data-instgrm-permalink={reel.url}
+                    data-instgrm-version="14"
+                    style={{
+                      background: '#FFF',
+                      border: 0,
+                      borderRadius: '3px',
+                      boxShadow: '0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)',
+                      margin: '1px',
+                      maxWidth: '540px',
+                      minWidth: '326px',
+                      padding: 0,
+                      width: 'calc(100% - 2px)'
+                    }}
                   >
-                    <span className="button-icon">▶</span>
-                    Ver Reel
-                  </a>
+                    <a 
+                      href={reel.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver en Instagram
+                    </a>
+                  </blockquote>
                 </div>
+                <a 
+                  href={reel.url}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="reel-button"
+                >
+                  <span className="button-icon">▶</span>
+                  Ver Reel
+                </a>
               </div>
             ))}
           </div>

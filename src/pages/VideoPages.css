@@ -656,6 +656,19 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.reel-embed-wrapper .instagram-media {
+  margin: 0 auto !important;
+  min-width: 326px !important;
+  max-width: 100% !important;
+}
+
+.tiktok-embed-wrapper .tiktok-embed {
+  margin: 0 auto !important;
 }
 
 .reel-card:hover .reel-embed-wrapper {

@@ -60,7 +60,9 @@ const Contacto = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="mensaje">Comentario</label>
+              <label htmlFor="mensaje">Comentario
+                
+              </label>
               <textarea
                 id="mensaje"
                 name="mensaje"

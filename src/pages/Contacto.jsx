@@ -21,10 +21,25 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Validación estricta del correo
+    // Validación estricta del correo - debe tener @ y punto seguido de extensión
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailRegex.test(formData.email)) {
-      alert('Por favor ingresa una dirección de correo completa y válida (ejemplo: usuario@dominio.com)');
+    const hasDomain = formData.email.includes('@') && formData.email.split('@')[1]?.includes('.');
+    
+    if (!emailRegex.test(formData.email) || !hasDomain) {
+      alert('Por favor ingresa una dirección de correo completa y válida con dominio (ejemplo: usuario@dominio.com)');
+      return;
+    }
+    
+    // Verificar que después del @ haya texto y después del punto haya texto
+    const parts = formData.email.split('@');
+    if (parts.length !== 2 || !parts[0] || !parts[1]) {
+      alert('El correo debe tener el formato: usuario@dominio.com');
+      return;
+    }
+    
+    const domainParts = parts[1].split('.');
+    if (domainParts.length < 2 || !domainParts[0] || !domainParts[domainParts.length - 1]) {
+      alert('El correo debe incluir un dominio completo (ejemplo: @gmail.com, @hotmail.com)');
       return;
     }
     

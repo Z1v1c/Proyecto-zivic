@@ -20,6 +20,14 @@ const Contacto = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Validación estricta del correo
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailRegex.test(formData.email)) {
+      alert('Por favor ingresa una dirección de correo completa y válida (ejemplo: usuario@dominio.com)');
+      return;
+    }
+    
     alert(`Formulario enviado!\nNombre: ${formData.nombre}\nEmail: ${formData.email}\nMensaje: ${formData.mensaje}`);
     setFormData({ nombre: '', email: '', mensaje: '' });
   };
@@ -49,7 +57,7 @@ const Contacto = () => {
             <div className="form-group">
               <label htmlFor="email">Correo Electrónico</label>
               <input
-                type="email"
+                type="text"
                 id="email"
                 name="email"
                 value={formData.email}

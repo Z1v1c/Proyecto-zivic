@@ -55,7 +55,9 @@ const Contacto = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                placeholder="tu@email.com"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Ingresa una dirección de correo completa (ejemplo: usuario@dominio.com)"
+                placeholder="usuario@dominio.com"
               />
             </div>
 

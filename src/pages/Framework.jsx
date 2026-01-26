@@ -77,32 +77,28 @@ const Framework = () => {
           <div className="video-grid reels-grid">
             {reels.map((reel) => (
               <div key={reel.id} className="video-card reel-card">
-                <h3 className="reel-video-title">{reel.title}</h3>
-                <p className="reel-video-description">{reel.description}</p>
-                <div className="reel-embed-wrapper">
-                  <iframe
-                    src={`${reel.url}embed/`}
-                    style={{
-                      width: '100%',
-                      height: '500px',
-                      border: 'none',
-                      borderRadius: '10px',
-                      overflow: 'hidden'
-                    }}
-                    allowFullScreen
-                    scrolling="no"
-                    allow="encrypted-media;"
-                  ></iframe>
+                <div className="video-preview reel-preview">
+                  <div className="video-overlay">
+                    <span className="play-icon">▶</span>
+                  </div>
+                  <div className="video-number">Reel {reel.id}</div>
                 </div>
-                <a 
-                  href={reel.url}
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <div className="video-info">
+                  <h3 className="reel-video-title">{reel.title}</h3>
+                  <p className="reel-video-description">{reel.description}</p>
+                  <a 
+                    href={reel.url}
+                    target="_blank" 
+                    rel="noopener noreferrer"
                   className="reel-button"
                 >
                   <span className="button-icon">▶</span>
-                  Ver Reel
-                </a>
+                    className="reel-button"
+                  >
+                    <span className="button-icon">▶</span>
+                    Ver Reel
+                  </a>
+                </div>
               </div>
             ))}
           </div>

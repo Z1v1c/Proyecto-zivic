@@ -73,31 +73,25 @@ const DandyHats = () => {
           <div className="video-grid tiktok-grid">
             {tiktoks.map((tiktok) => (
               <div key={tiktok.id} className="video-card tiktok-card">
-                <h3 className="tiktok-video-title">{tiktok.title}</h3>
-                <p className="tiktok-video-description">{tiktok.description}</p>
-                <div className="tiktok-embed-wrapper">
-                  <iframe
-                    src={`https://www.tiktok.com/embed/v2/${tiktok.url.split('/').pop().split('?')[0]}`}
-                    style={{
-                      width: '100%',
-                      height: '500px',
-                      border: 'none',
-                      borderRadius: '10px'
-                    }}
-                    allowFullScreen
-                    scrolling="no"
-                    allow="encrypted-media;"
-                  ></iframe>
+                <div className="video-preview tiktok-preview">
+                  <div className="video-overlay">
+                    <span className="play-icon">▶</span>
+                  </div>
+                  <div className="video-number">Video {tiktok.id}</div>
                 </div>
-                <a 
-                  href={tiktok.url}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="tiktok-button"
-                >
-                  <span className="button-icon">▶</span>
-                  Ver en TikTok
-                </a>
+                <div className="video-info">
+                  <h3 className="tiktok-video-title">{tiktok.title}</h3>
+                  <p className="tiktok-video-description">{tiktok.description}</p>
+                  <a 
+                    href={tiktok.url}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="tiktok-button"
+                  >
+                    <span className="button-icon">▶</span>
+                    Ver en TikTok
+                  </a>
+                </div>
               </div>
             ))}
           </div>

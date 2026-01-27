@@ -9,7 +9,7 @@ const DandyHats = () => {
       id: 1, 
       videoId: '7457766506044067110',
       url: 'https://www.tiktok.com/@dandyhats/video/7457766506044067110',
-      thumbnail: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/oUqACBfJeAIgkCQQDAffgBzIBPrGEjeBs5~tplv-dmt-logom:tos-maliva-i-0000/oQBGI8BAnCWAb4I7fAef9bA.image',
+      thumbnail: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&h=1200&fit=crop',
       title: 'Estilo y Elegancia',
       description: 'Descubre los sombreros más elegantes de nuestra colección'
     },
@@ -17,7 +17,7 @@ const DandyHats = () => {
       id: 2, 
       videoId: '7457766949612604710',
       url: 'https://www.tiktok.com/@dandyhats/video/7457766949612604710',
-      thumbnail: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/oUqACBfJeAIgkCQQDAffgBzIBPrGEjeBs5~tplv-dmt-logom:tos-maliva-i-0000/oQBGI8BAnCWAb4I7fAef9bA.image',
+      thumbnail: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?w=800&h=1200&fit=crop',
       title: 'Colección Premium',
       description: 'Sombreros de alta calidad para cada ocasión'
     },
@@ -25,7 +25,7 @@ const DandyHats = () => {
       id: 3, 
       videoId: '7457768105838914822',
       url: 'https://www.tiktok.com/@dandyhats/video/7457768105838914822',
-      thumbnail: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/oUqACBfJeAIgkCQQDAffgBzIBPrGEjeBs5~tplv-dmt-logom:tos-maliva-i-0000/oQBGI8BAnCWAb4I7fAef9bA.image',
+      thumbnail: 'https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?w=800&h=1200&fit=crop',
       title: 'Tendencias',
       description: 'Los diseños más modernos y con estilo'
     },
@@ -33,7 +33,7 @@ const DandyHats = () => {
       id: 4, 
       videoId: '7457768621996485894',
       url: 'https://www.tiktok.com/@dandyhats/video/7457768621996485894',
-      thumbnail: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/oUqACBfJeAIgkCQQDAffgBzIBPrGEjeBs5~tplv-dmt-logom:tos-maliva-i-0000/oQBGI8BAnCWAb4I7fAef9bA.image',
+      thumbnail: 'https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?w=800&h=1200&fit=crop',
       title: 'Detalles Únicos',
       description: 'Cada sombrero cuenta una historia'
     },
@@ -41,7 +41,7 @@ const DandyHats = () => {
       id: 5, 
       videoId: '7457769067009838342',
       url: 'https://www.tiktok.com/@dandyhats/video/7457769067009838342',
-      thumbnail: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/oUqACBfJeAIgkCQQDAffgBzIBPrGEjeBs5~tplv-dmt-logom:tos-maliva-i-0000/oQBGI8BAnCWAb4I7fAef9bA.image',
+      thumbnail: 'https://images.unsplash.com/photo-1533055640609-24b498dfd74c?w=800&h=1200&fit=crop',
       title: 'Artesanía',
       description: 'Hecho con dedicación y pasión'
     },
@@ -49,7 +49,7 @@ const DandyHats = () => {
       id: 6, 
       videoId: '7457769681826270469',
       url: 'https://www.tiktok.com/@dandyhats/video/7457769681826270469',
-      thumbnail: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/oUqACBfJeAIgkCQQDAffgBzIBPrGEjeBs5~tplv-dmt-logom:tos-maliva-i-0000/oQBGI8BAnCWAb4I7fAef9bA.image',
+      thumbnail: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=800&h=1200&fit=crop',
       title: 'Estilo Clásico',
       description: 'La elegancia nunca pasa de moda'
     },
@@ -57,7 +57,7 @@ const DandyHats = () => {
       id: 7, 
       videoId: '7457770149673045254',
       url: 'https://www.tiktok.com/@dandyhats/video/7457770149673045254',
-      thumbnail: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-p-0068/oUqACBfJeAIgkCQQDAffgBzIBPrGEjeBs5~tplv-dmt-logom:tos-maliva-i-0000/oQBGI8BAnCWAb4I7fAef9bA.image',
+      thumbnail: 'https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=800&h=1200&fit=crop',
       title: 'Nueva Colección',
       description: 'Lo último en sombreros de diseñador'
     }
@@ -90,10 +90,9 @@ const DandyHats = () => {
                 <div 
                   className="video-preview tiktok-preview-with-image"
                   style={{
-                    backgroundImage: `linear-gradient(135deg, rgba(255, 0, 80, 0.8) 0%, rgba(0, 242, 234, 0.8) 100%), url(https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?w=800&h=1200&fit=crop)`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${tiktok.thumbnail})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundBlendMode: 'overlay'
+                    backgroundPosition: 'center'
                   }}
                 >
                   <div className="video-overlay-new">

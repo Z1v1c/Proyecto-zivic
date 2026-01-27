@@ -10,40 +10,40 @@ const DandyHats = () => {
       videoId: '7457766506044067110',
       url: 'https://www.tiktok.com/@dandyhats/video/7457766506044067110',
       thumbnail: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&h=1200&fit=crop',
-      title: 'Estilo y Elegancia',
-      description: 'Descubre los sombreros más elegantes de nuestra colección'
+      title: '¿Quién es el fundador de "Dandy Hats"?',
+      description: 'Leonardo Sandoval creó esta marca en Los Ángeles, California, con la visión de diseñar gorras que fueran mucho más que un accesorio: piezas de estilo con actitud, personalidad y un carácter único. Su objetivo desde el principio fue combinar calidad artesanal, diseño audaz y una identidad fuertemente ligada a la cultura streetwear.'
     },
     { 
       id: 2, 
       videoId: '7457766949612604710',
       url: 'https://www.tiktok.com/@dandyhats/video/7457766949612604710',
       thumbnail: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?w=800&h=1200&fit=crop',
-      title: 'Colección Premium',
-      description: 'Sombreros de alta calidad para cada ocasión'
+      title: 'Colaboraciones con artistas: Dandy Hats x Junior H',
+      description: 'Dandy Hats ha llevado su estilo urbano y diseño premium más allá del streetwear tradicional al colaborar con figuras influyentes de la música regional urbana. Una de sus colaboraciones más destacadas es la familia de gorras creadas junto al artista mexicano Junior H, uno de los máximos exponentes de los corridos tumbados y la cultura Sad Boyz.'
     },
     { 
       id: 3, 
       videoId: '7457768105838914822',
       url: 'https://www.tiktok.com/@dandyhats/video/7457768105838914822',
       thumbnail: 'https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?w=800&h=1200&fit=crop',
-      title: 'Tendencias',
-      description: 'Los diseños más modernos y con estilo'
+      title: 'Presencia y alcance en redes',
+      description: 'La marca Dandy Hats tiene una presencia significativa en TikTok, donde su cuenta de videos ha acumulado alrededor de 617 mil seguidores y más de 18.7 millones de likes, con un promedio de casi 278 mil vistas por video y buen nivel de interacción por publicación.'
     },
     { 
       id: 4, 
       videoId: '7457768621996485894',
       url: 'https://www.tiktok.com/@dandyhats/video/7457768621996485894',
       thumbnail: 'https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?w=800&h=1200&fit=crop',
-      title: 'Detalles Únicos',
-      description: 'Cada sombrero cuenta una historia'
+      title: 'Exclusividad y diseño en Dandy Hats',
+      description: 'La marca Dandy Hats se distingue por ofrecer diseños exclusivos y ediciones limitadas, lo que refuerza su valor como accesorio de moda y objeto de colección. Muchos de los modelos lanzados son piezas limitadas en cantidad, producidas en tan solo 300 o 1,000 unidades en todo el mundo.'
     },
     { 
       id: 5, 
       videoId: '7457769067009838342',
       url: 'https://www.tiktok.com/@dandyhats/video/7457769067009838342',
       thumbnail: 'https://images.unsplash.com/photo-1533055640609-24b498dfd74c?w=800&h=1200&fit=crop',
-      title: 'Artesanía',
-      description: 'Hecho con dedicación y pasión'
+      title: 'Inicios de los diseños de Dandy Hats',
+      description: 'La marca Dandy Hats nació en 2015, cuando Leonardo Sandoval decidió crear algo más que simples gorras: quería diseñar accesorios con personalidad y significado, que fueran expresión de estilo y confianza. Desde sus primeros días en Los Ángeles, California, la idea fue poner en cada pieza una historia visual.'
     },
     { 
       id: 6, 

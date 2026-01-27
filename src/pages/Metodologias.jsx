@@ -8,20 +8,20 @@ const Metodologias = () => {
     { 
       id: 1, 
       videoId: 'vmO3SPXtxXo', 
-      title: 'Metodologías de Desarrollo',
-      description: 'Explora las mejores prácticas de desarrollo'
+      title: 'Metodologías ágiles en programación',
+      description: 'Las metodologías ágiles son un conjunto de enfoques para desarrollar software de manera flexible, rápida y colaborativa. A diferencia de los métodos tradicionales, que siguen un plan rígido de principio a fin, las metodologías ágiles permiten adaptarse a cambios, responder a las necesidades del cliente y mejorar continuamente el producto durante todo el proceso de desarrollo. Entre las metodologías ágiles más conocidas están Scrum, Kanban y Extreme Programming (XP). Todas comparten principios clave: Trabajo en equipo y comunicación constante entre desarrolladores y clientes, entrega incremental y frecuente de funcionalidades, permitiendo recibir retroalimentación temprana, y adaptabilidad frente a cambios de requerimientos o prioridades. El objetivo es crear software de alta calidad de forma más eficiente, fomentando la colaboración, reduciendo errores y asegurando que el producto final cumpla con las expectativas del usuario.'
     },
     { 
       id: 2, 
       videoId: 'ZQgx1eNNEKw', 
-      title: 'Programación Eficiente',
-      description: 'Técnicas y estrategias para programar mejor'
+      title: 'Diagrama de flujo y su función en metodologías de programación',
+      description: 'Un diagrama de flujo es una representación gráfica de un proceso o algoritmo, que utiliza símbolos como rectángulos, rombos y flechas para mostrar paso a paso cómo se realiza una tarea o se resuelve un problema. Es una herramienta fundamental para planificar y organizar la programación antes de escribir código. En las metodologías ágiles, los diagramas de flujo ayudan a los equipos a visualizar procesos de manera clara y rápida, facilitando la comprensión de las tareas, detectar errores o redundancias antes de la implementación, lo que ahorra tiempo y esfuerzo, comunicar ideas entre desarrolladores, clientes y otras partes interesadas, asegurando que todos tengan la misma visión del proyecto, y planificar iteraciones o sprints de forma organizada, mostrando cómo cada paso del proceso contribuye al producto final.'
     },
     { 
       id: 3, 
       videoId: 'iqeZW1qpnOA', 
-      title: 'Mejores Prácticas',
-      description: 'Aprende los fundamentos del buen código'
+      title: 'Hosting y dominio: cómo funcionan las páginas web',
+      description: 'Para que una página web exista y sea accesible en Internet, necesitamos dos elementos fundamentales: el dominio y el hosting. El dominio es el nombre de tu sitio web, la dirección que los usuarios escriben en el navegador para llegar a tu página, como www.google.com o www.tuempresa.com. Es la dirección digital que identifica tu página y la hace fácil de recordar. El hosting, por otro lado, es el espacio donde se almacenan todos los archivos de tu sitio web: textos, imágenes, videos y bases de datos. Funciona como un "terreno digital" que mantiene tu página disponible en línea las 24 horas del día. Sin hosting, tu dominio no tendría contenido que mostrar. En conjunto, dominio y hosting trabajan como dirección y casa: el dominio es la dirección que escribes, y el hosting es la casa donde vive todo el contenido de tu web.'
     }
   ];
 

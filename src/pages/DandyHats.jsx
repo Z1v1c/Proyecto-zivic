@@ -8,49 +8,49 @@ const DandyHats = () => {
     { 
       id: 1, 
       videoId: '7457766506044067110',
-      url: 'https://vt.tiktok.com/ZSa2b5VNS/',
+      url: 'https://www.tiktok.com/@dandyhats/video/7457766506044067110',
       title: 'Estilo y Elegancia',
       description: 'Descubre los sombreros más elegantes de nuestra colección'
     },
     { 
       id: 2, 
       videoId: '7457766949612604710',
-      url: 'https://vt.tiktok.com/ZSa2bf2dV/',
+      url: 'https://www.tiktok.com/@dandyhats/video/7457766949612604710',
       title: 'Colección Premium',
       description: 'Sombreros de alta calidad para cada ocasión'
     },
     { 
       id: 3, 
       videoId: '7457768105838914822',
-      url: 'https://vt.tiktok.com/ZSa2bPEos/',
+      url: 'https://www.tiktok.com/@dandyhats/video/7457768105838914822',
       title: 'Tendencias',
       description: 'Los diseños más modernos y con estilo'
     },
     { 
       id: 4, 
       videoId: '7457768621996485894',
-      url: 'https://vt.tiktok.com/ZSa2b5YWF/',
+      url: 'https://www.tiktok.com/@dandyhats/video/7457768621996485894',
       title: 'Detalles Únicos',
       description: 'Cada sombrero cuenta una historia'
     },
     { 
       id: 5, 
       videoId: '7457769067009838342',
-      url: 'https://vt.tiktok.com/ZSa2bkWe1/',
+      url: 'https://www.tiktok.com/@dandyhats/video/7457769067009838342',
       title: 'Artesanía',
       description: 'Hecho con dedicación y pasión'
     },
     { 
       id: 6, 
       videoId: '7457769681826270469',
-      url: 'https://vt.tiktok.com/ZSa2bNuxU/',
+      url: 'https://www.tiktok.com/@dandyhats/video/7457769681826270469',
       title: 'Estilo Clásico',
       description: 'La elegancia nunca pasa de moda'
     },
     { 
       id: 7, 
       videoId: '7457770149673045254',
-      url: 'https://vt.tiktok.com/ZSa2b5RaX/',
+      url: 'https://www.tiktok.com/@dandyhats/video/7457770149673045254',
       title: 'Nueva Colección',
       description: 'Lo último en sombreros de diseñador'
     }

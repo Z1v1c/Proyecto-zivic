@@ -9,50 +9,50 @@ const Framework = () => {
       id: 1, 
       embedUrl: 'DTwGX0AERse',
       url: 'https://www.instagram.com/reel/DTwGX0AERse/?igsh=dDk3cXVvMjVxYzI4',
-      title: 'Diseño Innovador',
-      description: 'Explora nuestras creaciones más innovadoras'
+      title: '¿Qué es Python?',
+      description: 'Python es un lenguaje de programación de alto nivel, creado para ser simple, claro y fácil de entender. Su sintaxis es limpia y cercana al lenguaje humano, lo que permite escribir código de forma rápida y ordenada. Se utiliza en desarrollo web, análisis de datos, inteligencia artificial, automatización y más.'
     },
     { 
       id: 2, 
       embedUrl: 'DTwGmbmkdU2',
       url: 'https://www.instagram.com/reel/DTwGmbmkdU2/?igsh=dnl4YjI0ODRqdjUx',
-      title: 'Estilo Único',
-      description: 'Cada diseño cuenta una historia diferente'
+      title: '¿Quién creó Python?',
+      description: 'Python fue creado por Guido van Rossum, un programador de los Países Bajos, a finales de los años 80. Su objetivo era desarrollar un lenguaje fácil de leer, simple de escribir y poderoso. En 1991 lanzó la primera versión pública de Python.'
     },
     { 
       id: 3, 
       embedUrl: 'DTwG8F6ES_F',
       url: 'https://www.instagram.com/reel/DTwG8F6ES_F/?igsh=MWxqMjdjeGEya3RhZw==',
-      title: 'Creatividad',
-      description: 'La creatividad no tiene límites'
+      title: '¿Qué es HTML?',
+      description: 'HTML (HyperText Markup Language) es el lenguaje base de la web. Se utiliza para estructurar y organizar el contenido de las páginas web, como textos, imágenes, videos, enlaces y formularios. Es el esqueleto de cualquier sitio web.'
     },
     { 
       id: 4, 
       embedUrl: 'DTwHPC3EYnA',
       url: 'https://www.instagram.com/reel/DTwHPC3EYnA/?igsh=MTFheHFvdDByOGlyeQ==',
-      title: 'Tendencias',
-      description: 'Siguiendo las últimas tendencias del diseño'
+      title: 'Inicios de HTML',
+      description: 'HTML fue creado a principios de los años 90 por Tim Berners-Lee en el CERN. Su objetivo era desarrollar un lenguaje simple que permitiera compartir documentos y enlaces entre computadoras. Con el tiempo, HTML evolucionó hasta convertirse en el lenguaje fundamental de la web moderna.'
     },
     { 
       id: 5, 
       embedUrl: 'DTwHcexEZYl',
       url: 'https://www.instagram.com/reel/DTwHcexEZYl/?igsh=MXgxcDB5MzZla2g1Yg==',
-      title: 'Inspiración',
-      description: 'Inspiración en cada detalle'
+      title: 'La WWW y su funcionamiento en Internet',
+      description: 'La WWW (World Wide Web) es la parte del Internet que permite acceder y navegar por páginas web mediante navegadores. Fue inventada por Tim Berners-Lee en 1989 y revolucionó la forma en que consultamos información y compartimos contenidos en la red.'
     },
     { 
       id: 6, 
       embedUrl: 'DTwHpF6kdc1',
       url: 'https://www.instagram.com/reel/DTwHpF6kdc1/?igsh=MWR0aG1hemY5a3F1MA==',
-      title: 'Arte Visual',
-      description: 'Donde el arte se encuentra con el diseño'
+      title: '¿Qué es CSS en HTML?',
+      description: 'CSS (Cascading Style Sheets) es un lenguaje que se utiliza junto con HTML para dar estilo y diseño a las páginas web. Define colores, fuentes, tamaños, márgenes y posiciones, permitiendo crear páginas visualmente atractivas y uniformes.'
     },
     { 
       id: 7, 
       embedUrl: 'DTwHzU4kRu9',
       url: 'https://www.instagram.com/reel/DTwHzU4kRu9/?igsh=MXgwOWV0NTZrMHBuaA==',
-      title: 'Colección Especial',
-      description: 'Lo mejor de nuestra colección'
+      title: '¿Qué es React?',
+      description: 'React es una librería de JavaScript creada por Facebook para construir interfaces de usuario interactivas. Facilita la creación de componentes reutilizables, mejorando el rendimiento y la experiencia del usuario en aplicaciones web y móviles.'
     }
   ];
 

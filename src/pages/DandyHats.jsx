@@ -80,20 +80,17 @@ const DandyHats = () => {
           <div className="video-grid tiktok-grid">
             {tiktoks.map((tiktok) => (
               <div key={tiktok.id} className="video-card tiktok-card">
-                <a 
-                  href={tiktok.url}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="tiktok-preview-link"
-                >
-                  <div className="video-preview tiktok-preview-bg">
-                    <div className="video-overlay-new">
-                      <div className="play-icon-large">▶</div>
-                      <div className="platform-badge">TikTok</div>
+                <div className="video-preview tiktok-preview-bg">
+                  <div className="video-overlay-new">
+                    <div className="tiktok-icon-svg">
+                      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" style={{width: '80px', height: '80px'}}>
+                        <path d="M38.43,8.95c-2.87-1.87-4.79-5.03-4.79-8.64c0-0.2-0.01-0.39-0.02-0.59c-0.01-0.26-0.03-0.51-0.05-0.77h-7.72v24.73c0,3.83-3.11,6.94-6.94,6.94c-1.2,0-2.33-0.31-3.31-0.84c-1.96-1.07-3.28-3.15-3.28-5.54c0-3.47,2.82-6.29,6.29-6.29c0.65,0,1.28,0.1,1.87,0.29V10.6c-0.62-0.09-1.24-0.13-1.87-0.13C9.26,10.47,2.5,17.23,2.5,25.58c0,5.04,2.45,9.51,6.23,12.28c2.38,1.75,5.31,2.79,8.47,2.79c8.35,0,15.11-6.76,15.11-15.11V15.09c3.28,2.35,7.27,3.74,11.59,3.74v-7.72C40.89,11.11,39.49,10.25,38.43,8.95z" fill="white"/>
+                      </svg>
                     </div>
-                    <div className="video-number">Video {tiktok.id}</div>
+                    <div className="platform-badge">TikTok</div>
                   </div>
-                </a>
+                  <div className="video-number">Video {tiktok.id}</div>
+                </div>
                 <div className="video-info">
                   <h3 className="tiktok-video-title">{tiktok.title}</h3>
                   <p className="tiktok-video-description">{tiktok.description}</p>

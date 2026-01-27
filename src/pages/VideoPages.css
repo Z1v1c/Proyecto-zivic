@@ -122,6 +122,16 @@
   margin-bottom: 1rem;
 }
 
+.tiktok-icon-svg {
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.7));
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.video-preview:hover .tiktok-icon-svg {
+  transform: scale(1.2);
+}
+
 .video-preview:hover .play-icon-large {
   transform: scale(1.3);
 }

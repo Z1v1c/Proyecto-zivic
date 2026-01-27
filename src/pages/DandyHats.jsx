@@ -90,9 +90,10 @@ const DandyHats = () => {
                 <div 
                   className="video-preview tiktok-preview-with-image"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://img.youtube.com/vi/placeholder/maxresdefault.jpg)`,
+                    backgroundImage: `linear-gradient(135deg, rgba(255, 0, 80, 0.8) 0%, rgba(0, 242, 234, 0.8) 100%), url(https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?w=800&h=1200&fit=crop)`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center'
+                    backgroundPosition: 'center',
+                    backgroundBlendMode: 'overlay'
                   }}
                 >
                   <div className="video-overlay-new">

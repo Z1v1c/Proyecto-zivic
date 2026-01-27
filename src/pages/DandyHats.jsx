@@ -50,16 +50,16 @@ const DandyHats = () => {
       videoId: '7457769681826270469',
       url: 'https://www.tiktok.com/@dandyhats/video/7457769681826270469',
       thumbnail: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=800&h=1200&fit=crop',
-      title: 'Estilo Clásico',
-      description: 'La elegancia nunca pasa de moda'
+      title: '¿Valen la pena las gorras Dandy Hats?',
+      description: 'Dandy Hats se ha posicionado como una marca de gorras premium dentro del streetwear, y su valor va más allá de lo funcional. Sus diseños destacan por ser exclusivos, de edición limitada y con una identidad visual fuerte, pensados para quienes buscan diferenciarse y expresar estilo propio.'
     },
     { 
       id: 7, 
       videoId: '7457770149673045254',
       url: 'https://www.tiktok.com/@dandyhats/video/7457770149673045254',
       thumbnail: 'https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=800&h=1200&fit=crop',
-      title: 'Nueva Colección',
-      description: 'Lo último en sombreros de diseñador'
+      title: 'Verificación y autenticidad de Dandy Hats',
+      description: 'Las gorras de Dandy Hats se presentan como productos originales y de edición premium. La marca ofrece varios elementos que te permiten verificar que una pieza es auténtica y legítima. Las gorras originales suelen llegar en un empaque personalizado con el logo de Dandy Hats.'
     }
   ];
 

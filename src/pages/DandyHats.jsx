@@ -87,14 +87,12 @@ const DandyHats = () => {
           <div className="video-grid tiktok-grid">
             {tiktoks.map((tiktok) => (
               <div key={tiktok.id} className="video-card tiktok-card">
-                <div 
-                  className="video-preview tiktok-preview-with-image"
-                  style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${tiktok.thumbnail})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
-                >
+                <div className="video-preview tiktok-preview-with-image">
+                  <img 
+                    src={tiktok.thumbnail} 
+                    alt={tiktok.title}
+                    className="tiktok-thumbnail-img"
+                  />
                   <div className="video-overlay-new">
                     <div className="play-icon-large">▶</div>
                     <div className="platform-badge">TikTok</div>

@@ -85,19 +85,17 @@
 
 .tiktok-preview-with-image {
   background: #000;
+  position: relative;
 }
 
-.reel-preview {
-  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-
-.tiktok-preview-link {
-  text-decoration: none;
-  display: block;
-}
-
-.video-preview:hover {
-  transform: scale(1.05);
+.tiktok-thumbnail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .video-overlay-new {
@@ -110,8 +108,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .video-preview:hover .video-overlay-new {
@@ -184,6 +183,19 @@
   transform: scale(1.2);
 }
 
+.reel-preview {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.tiktok-preview-link {
+  text-decoration: none;
+  display: block;
+}
+
+.video-preview:hover {
+  transform: scale(1.05);
+}
+
 .video-number {
   position: absolute;
   top: 1rem;
@@ -194,6 +206,7 @@
   border-radius: 20px;
   font-weight: 600;
   font-size: 0.9rem;
+  z-index: 3;
 }
 
 .video-info {
